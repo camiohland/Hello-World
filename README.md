@@ -43,8 +43,6 @@ The tools used in this project include:
 3. Select the README.md file.
 4. Review the project documentation.
 
-There is no executable program associated with this project.
-
 ## Additional Information
 
 This repository was created as part of Week 7 in BAIS:3050 Professional Preparation at the University of Iowa.
