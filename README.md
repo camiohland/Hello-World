@@ -40,10 +40,11 @@ The tools used in this project include:
 
 ## How to Run Program
 
-1. Open GitHub in your web browser.
-2. Navigate to the Hello-World repository.
-3. Select the README.md file.
-4. Review the project documentation.
+1. Open the Hello-World repository on GitHub.
+2. Select one of the uploaded Computational Thinking homework files.
+3. Download the Python file or copy the code into a Python editor.
+4. Run the program using Python 3.
+5. Follow any instructions displayed by the program.
 
 ## Additional Information
 
