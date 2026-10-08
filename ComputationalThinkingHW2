@@ -1,0 +1,66 @@
+# Camryn Ohland
+# 10/4/2026
+# Homework 2
+
+# Loan Amortization
+
+# Ask the user to enter the loan amount
+principal = float(input("Enter the loan amount ($): "))
+
+# Ask the user to enter the annual interest rate as a percent
+annual_rate = float(input("Enter the annual interest rate (%): "))
+
+# Ask the user to enter the length of the loan in years
+years = int(input("Enter the loan term (years): "))
+
+
+# Convert the annual interest rate from a percent to a decimal
+annual_rate_decimal = annual_rate / 100
+
+# Convert the annual interest rate to a monthly interest rate
+monthly_rate = annual_rate_decimal / 12
+
+# Calculate the total number of monthly payments
+num_payments = years * 12
+
+
+# Calculate the monthly payment using the loan payment formula
+monthly_payment = (
+    principal
+    * (monthly_rate * (1 + monthly_rate) ** num_payments)
+    / ((1 + monthly_rate) ** num_payments - 1)
+)
+
+
+# print the monthly payment rounded to two decimal places
+print(f"\nMonthly Payment: ${monthly_payment:.2f}")
+
+
+# Set the starting balance equal to the original loan amount
+balance = principal
+
+
+# Print the headings for the amortization table
+print()
+print(
+    f"{'Month':>5} {'Payment':>10} {'Principal':>12} {'Interest':>10} {'Balance':>12}"
+)
+
+
+# loop through each month of the loan
+for month in range(1, num_payments + 1):
+
+    # Calculate the interest charged for the current month
+    interest = balance * monthly_rate
+
+    # Calculate how much of the payment goes toward principal
+    principal_paid = monthly_payment - interest
+
+    # Subtract the principal paid from the remaining loan balance
+    balance = balance - principal_paid
+
+    # Print the information for the current month
+    print(
+        f"{month:5} {monthly_payment:10,.2f} {principal_paid:12,.2f} "
+        f"{interest:10,.2f} {balance:12,.2f}"
+    )
