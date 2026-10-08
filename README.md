@@ -35,6 +35,8 @@ The tools used in this project include:
 
 - README.md - Contains the project description, tools, files, and instructions.
 - Hello-World repository - Stores the project files on GitHub.
+- Computational Thinking Homework 2
+- Computational Thinking End of Week Assignment 6
 
 ## How to Run Program
 
